@@ -49,6 +49,44 @@
       </section>
     </article>
 
+    <article class="testcase">
+      <h2>Don't use button styles on elements that aren't buttons</h2>
+
+      <section class="bad">
+        <h3>Bad</h3>
+        <span class="button">I am not a button</span>
+      </section>
+
+      <section class="good">
+        <h3>Good</h3>
+        <button class="button">I am a button</button>
+      </section>
+    </article>
+
+    <article class="testcase">
+      <h2>Elements that look disabled should be properly disabled</h2>
+
+      <section class="bad">
+        <h3>Bad</h3>
+        <p>
+          <a href="#" class="disabled">A disabled link with href</a>
+        </p>
+        <p>
+          <button class="disabled">A disabled looking button</button>
+        </p>
+      </section>
+
+      <section class="good">
+        <h3>Good</h3>
+        <p>
+          <a class="disabled">A disabled link with href</a>
+        </p>
+        <p>
+          <button class="disabled" disabled>A disabled button</button>
+        </p>
+      </section>
+    </article>
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -20,6 +20,10 @@ body {
 }
 
 .testcase {
+  clear: both;
+  margin-bottom: 5rem;
+  float: left;
+
   .good,
   .bad {
     @include span-columns(6);
