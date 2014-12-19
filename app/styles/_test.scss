@@ -1,0 +1,13 @@
+*[style]:after {
+  background: red;
+  color: white;
+  content: 'Warning: use of inline styling. Can this be moved to a stylesheet?'
+}
+
+form {
+  button:not([type]):after {
+    background: red;
+    color: white;
+    content: 'Warning: this button doesn’t have a type attribute. Is it a submit, reset or just button?';
+  }
+}

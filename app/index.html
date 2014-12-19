@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>a11y</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <article class="testcase">
+      <h2>Inline styling should not be used</h2>
+
+      <section class="bad">
+        <h3>Bad</h3>
+        <span style="color: red;">This is text</span>
+      </section>
+
+      <section class="good">
+        <h3>Good</h3>
+        <span>This is text</span>
+      </section>
+    </article>
+
+
+    <article class="testcase">
+      <h2>Buttons inside of forms must have a <em>type</em> attribute</h2>
+
+      <section class="bad">
+        <h3>Bad</h3>
+        <form action="#">
+          <button>Submit</button>
+        </form>
+      </section>
+
+      <section class="good">
+        <h3>Good</h3>
+        <form action="#">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </article>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
